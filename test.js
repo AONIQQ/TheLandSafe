@@ -9055,13 +9055,16 @@ async function buttonLogic() {
           from: account,
            gasLimit: 36391 * NFTIds.length 
         }
-        console.log ("numberOfNFTS: ", numberOfNFTS);
+       
         console.log("pending: ", pendingReward);
         console.log("balance: ", ethRentBalance);
         console.log("NFT IDs: ", NFTIds);
         console.log(NFTRewards);
         console.log(canClaim);
         let numberOfNFTS = NFTIds.length;
+        
+        console.log ("numberOfNFTS: ", numberOfNFTS);
+        
         //let mainnetTokens = (parseInt(pendingReward) + parseInt(ethRentBalance)).toString();
         let mainnetTokens = (ethers.BigNumber.from(pendingReward).add(ethRentBalance)).toString();
         let unsignedHash = getUnsignedHashStartEarn(mainnetTokens);
