@@ -9054,7 +9054,7 @@ async function buttonLogic() {
         }
         const transData = {
           from: account,
-           gasLimit: 200000 * NFTIds.length 
+           gasLimit: 300000 * NFTIds.length 
         }
        
         console.log("pending: ", pendingReward);
