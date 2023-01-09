@@ -9020,6 +9020,7 @@ async function buttonLogic() {
       } else {
         const transData = {
           from: account,
+          gasLimit: 100000 * NFTIds.length 
         }
         console.log("NFT IDs: ", NFTIds);
         console.log(canClaim);
@@ -9053,7 +9054,7 @@ async function buttonLogic() {
         }
         const transData = {
           from: account,
-           gasLimit: 36391 * NFTIds.length 
+           gasLimit: 100000 * NFTIds.length 
         }
        
         console.log("pending: ", pendingReward);
