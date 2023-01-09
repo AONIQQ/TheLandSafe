@@ -9053,7 +9053,7 @@ async function buttonLogic() {
         }
         const transData = {
           from: account,
-           gasLimit: 3639166 * NFTIds.length 
+           gasLimit: 36391 * NFTIds.length 
         }
         console.log("pending: ", pendingReward);
         console.log("balance: ", ethRentBalance);
