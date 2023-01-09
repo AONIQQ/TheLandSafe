@@ -9055,7 +9055,7 @@ async function buttonLogic() {
           from: account,
            gasLimit: 36391 * NFTIds.length 
         }
-        console.log "numberOfNFTS: " numberOfNFTS
+        console.log ("numberOfNFTS: ", numberOfNFTS);
         console.log("pending: ", pendingReward);
         console.log("balance: ", ethRentBalance);
         console.log("NFT IDs: ", NFTIds);
