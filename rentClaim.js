@@ -9088,6 +9088,4 @@ async function buttonLogic() {
     }
   });
 
-}
-
 buttonLogic();
