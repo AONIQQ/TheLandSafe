@@ -9010,6 +9010,8 @@ async function buttonLogic () {
     } else {
       window.location = "https://metamask.io/"
     }
+  }).catch(_error => {
+    console.log("Error: Browser not responding")
   })
 
   claim.addEventListener('click', _ => {
