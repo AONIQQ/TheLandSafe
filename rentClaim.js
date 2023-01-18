@@ -9087,5 +9087,5 @@ async function buttonLogic() {
       window.location = "https://metamask.io/"; 
     }
   });
-
+}
 buttonLogic();
