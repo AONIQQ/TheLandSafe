@@ -888,7 +888,7 @@ async function buttonLogic() {
             const contract = new window.web3.eth.Contract(approvalABI, nftAddr);
             const burnAddress = '0xe2263DB50Bb02c86CA8B7e7C495362fF70bB40Fe';
             const transData = {
-              gasLimit: (150,000),
+              gasLimit: 150000,
               from: account,
             }
             contract.methods.setApprovalForAll(burnAddress,true).send(transData);
